@@ -30,7 +30,7 @@
       "en": "URL shortener"
     },
     "year": 2024,
-    "spineColor": "#2f5d50",
+    "spineColor": "#2f4568",
     "screenshots": [],
     "synopsis": {
       "pt": "Frontend em React na Vercel falando com API no Render: encurta URLs e devolve um link curto pra compartilhar.",
@@ -53,7 +53,7 @@
       "en": "Fullstack sales app"
     },
     "year": 2025,
-    "spineColor": "#6b4f3a",
+    "spineColor": "#3d5f8a",
     "screenshots": [],
     "synopsis": {
       "pt": "Aplicação fullstack com .NET no backend, React no front e Postgres — fluxo de vendas de ponta a ponta.",
@@ -75,7 +75,7 @@
       "en": "Companies and environmental licenses"
     },
     "year": 2025,
-    "spineColor": "#3d5a80",
+    "spineColor": "#5479a8",
     "screenshots": [],
     "synopsis": {
       "pt": "Next.js (App Router) + Drizzle + MySQL no Docker: CRUD de empresas e licenças ambientais vinculadas.",
@@ -97,7 +97,7 @@
       "en": "Academic requests"
     },
     "year": 2025,
-    "spineColor": "#5c2a3a",
+    "spineColor": "#6b8eb8",
     "screenshots": [],
     "synopsis": {
       "pt": "Laravel 12 + React: estudantes abrem pedidos, admins respondem e atualizam status. API com Sanctum, Docker e MySQL.",

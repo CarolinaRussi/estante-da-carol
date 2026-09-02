@@ -38,3 +38,236 @@
     color: inherit;
   }
 }
+
+@layer components {
+  .featured-enter {
+    animation: featured-enter 0.7s ease-out both;
+  }
+
+  .book-3d {
+    display: block;
+    perspective: 1100px;
+    padding: 1.25rem 1.75rem 1.5rem 0.75rem;
+  }
+
+  .book-3d-inner {
+    position: relative;
+    width: min(220px, 58vw);
+    aspect-ratio: 2 / 3;
+    transform: rotateY(-22deg) rotateX(4deg);
+    transform-style: preserve-3d;
+    transition: transform 0.35s ease;
+  }
+
+  .book-3d:hover .book-3d-inner,
+  .book-3d:focus-visible .book-3d-inner {
+    transform: rotateY(-10deg) rotateX(2deg) translateY(-0.4rem);
+  }
+
+  .book-3d-cover {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 2px 5px 5px 2px;
+    box-shadow:
+      inset 0 0 0 1px rgb(26 42 74 / 0.08),
+      inset 8px 0 16px rgb(0 0 0 / 0.08),
+      12px 18px 32px rgb(28 25 23 / 0.28);
+  }
+
+  .book-3d-pages {
+    position: absolute;
+    top: 4px;
+    right: -11px;
+    bottom: 4px;
+    z-index: 1;
+    width: 14px;
+    border-radius: 0 2px 2px 0;
+    background: repeating-linear-gradient(
+      to right,
+      #f7f3ea 0 1px,
+      #ebe4d6 1px 2px
+    );
+    box-shadow: 2px 0 6px rgb(28 25 23 / 0.12);
+  }
+
+  .book-3d-spine {
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    bottom: 2px;
+    z-index: 0;
+    width: 12px;
+    border-radius: 2px 0 0 2px;
+    box-shadow: inset -2px 0 4px rgb(0 0 0 / 0.35);
+    transform: skewY(-1deg);
+    filter: brightness(0.72);
+  }
+
+  .shelf-stage {
+    position: relative;
+    padding: 2rem 1rem 0;
+  }
+
+  .shelf-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.85rem;
+    perspective: 900px;
+    padding-bottom: 0.15rem;
+  }
+
+  .shelf-spine {
+    position: relative;
+    display: flex;
+    width: 2.85rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px 3px 2px 2px;
+    transform: rotateY(var(--spine-tilt, -2deg));
+    transform-style: preserve-3d;
+    box-shadow:
+      inset 5px 0 10px rgb(255 255 255 / 0.14),
+      inset -8px 0 14px rgb(0 0 0 / 0.22),
+      0 10px 20px rgb(28 25 23 / 0.14);
+    transition:
+      transform 0.28s ease,
+      box-shadow 0.28s ease;
+  }
+
+  .shelf-spine:hover,
+  .shelf-spine:focus-visible {
+    z-index: 2;
+    transform: rotateY(0deg) translateY(-0.7rem) scale(1.03);
+    box-shadow:
+      inset 5px 0 10px rgb(255 255 255 / 0.18),
+      inset -8px 0 14px rgb(0 0 0 / 0.2),
+      0 18px 28px rgb(26 42 74 / 0.22);
+    outline: none;
+  }
+
+  .shelf-spine:focus-visible {
+    outline: 2px solid var(--color-night);
+    outline-offset: 3px;
+  }
+
+  .shelf-spine-title {
+    position: relative;
+    z-index: 2;
+    max-height: 85%;
+    overflow: hidden;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: rgb(243 239 230 / 0.94);
+    text-shadow: 0 1px 1px rgb(0 0 0 / 0.25);
+  }
+
+  .shelf-spine-edge {
+    position: absolute;
+    inset: 8% auto 8% 0;
+    z-index: 1;
+    width: 3px;
+    background: linear-gradient(
+      to right,
+      rgb(255 255 255 / 0.22),
+      transparent
+    );
+  }
+
+  .shelf-ledge {
+    margin: 0 auto;
+    height: 0.7rem;
+    max-width: 38rem;
+    border-radius: 2px;
+    background: linear-gradient(
+      to bottom,
+      #d9ceb8 0%,
+      #c4b59a 55%,
+      #b09c80 100%
+    );
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.35) inset,
+      0 8px 18px rgb(28 25 23 / 0.14);
+  }
+
+  .shelf-shadow {
+    margin: 0 auto;
+    height: 1.4rem;
+    max-width: 36rem;
+    background: radial-gradient(
+      ellipse at top,
+      rgb(28 25 23 / 0.14),
+      transparent 70%
+    );
+  }
+
+  .shelf-mobile-book {
+    position: relative;
+    display: block;
+    width: 9.5rem;
+    perspective: 700px;
+  }
+
+  .shelf-mobile-cover {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    aspect-ratio: 2 / 3;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-radius: 2px 5px 5px 2px;
+    transform: rotateY(-12deg);
+    box-shadow:
+      inset 6px 0 12px rgb(0 0 0 / 0.12),
+      10px 14px 24px rgb(28 25 23 / 0.18);
+    transition: transform 0.28s ease;
+  }
+
+  .shelf-mobile-book:hover .shelf-mobile-cover,
+  .shelf-mobile-book:focus-visible .shelf-mobile-cover {
+    transform: rotateY(-4deg) translateY(-0.25rem);
+  }
+
+  .shelf-mobile-pages {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    z-index: 1;
+    width: 10px;
+    border-radius: 0 2px 2px 0;
+    background: repeating-linear-gradient(
+      to right,
+      #f6f1e7 0 1px,
+      #e7dfd0 1px 2px
+    );
+  }
+
+  .about-photo {
+    aspect-ratio: 1 / 1;
+    max-height: 22rem;
+  }
+}
+
+@keyframes featured-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
