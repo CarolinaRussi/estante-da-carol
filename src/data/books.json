@@ -27,6 +27,7 @@
     },
     "tags": ["Fullstack", "Product", "React", "Node", "PostgreSQL"],
     "liveUrl": "https://www.entrelivros.com",
+    "githubUrl": "https://github.com/CarolinaRussi/the-book-club",
     "learnings": {
       "pt": "Aprendi que produto bom não é só código bonito: é entender a dor, cortar o que não precisa e colocar no ar algo que outra pessoa consiga usar sem você do lado. Também aprendi a carregar um projeto solo de ponta a ponta, decisões de produto, stack, banco, auth, e-mail, mapa, sorteios, e a usar IA como parceira de dúvidas, sem terceirizar o raciocínio.",
       "en": "I learned that a good product isn't just clean code: it's understanding the pain, cutting what you don't need, and shipping something someone else can use without you hovering. I also learned how to carry a solo project end to end — product calls, stack, database, auth, email, maps, reading draws — and how to use AI as a thinking partner without outsourcing the judgment."
