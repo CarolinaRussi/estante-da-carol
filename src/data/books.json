@@ -1,0 +1,114 @@
+[
+  {
+    "id": "entrelivros",
+    "title": "EntreLivros",
+    "subtitle": {
+      "pt": "Clubes de leitura, num só lugar",
+      "en": "Book clubs, in one place"
+    },
+    "year": 2026,
+    "spineColor": "#1a2a4a",
+    "coverImage": "/images/entrelivros-logo.png",
+    "screenshots": [],
+    "synopsis": {
+      "pt": "App para clubes de livro: histórico de leituras, encontros e memórias da galera — sem planilha espalhada. Produto real, no ar, feito de ponta a ponta.",
+      "en": "A book-club app for reading history, meetings, and shared memories — no scattered spreadsheets. A live product built end to end."
+    },
+    "tags": ["Fullstack", "Product", "Reading"],
+    "liveUrl": "https://www.entrelivros.com",
+    "learnings": {
+      "pt": "Tirar uma dor minha de leitora e virar produto usável por outras pessoas.",
+      "en": "Turning my own reader pain into a product other people can actually use."
+    },
+    "kind": "featured"
+  },
+  {
+    "id": "shorten-url",
+    "title": "Shorten URL",
+    "subtitle": {
+      "pt": "Encurtador de links",
+      "en": "URL shortener"
+    },
+    "year": 2024,
+    "spineColor": "#2f5d50",
+    "screenshots": [],
+    "synopsis": {
+      "pt": "Frontend em React na Vercel falando com API no Render: encurta URLs e devolve um link curto pra compartilhar.",
+      "en": "React frontend on Vercel talking to an API on Render: shorten URLs and share a short link."
+    },
+    "tags": ["React", "API", "Vercel", "Render"],
+    "liveUrl": "https://shorten-web.vercel.app",
+    "githubUrl": "https://github.com/CarolinaRussi/shorten_web",
+    "learnings": {
+      "pt": "Separar front e API e publicar os dois em hosts diferentes.",
+      "en": "Splitting front and API and shipping them on different hosts."
+    },
+    "kind": "book"
+  },
+  {
+    "id": "vendas",
+    "title": "Vendas",
+    "subtitle": {
+      "pt": "App fullstack de vendas",
+      "en": "Fullstack sales app"
+    },
+    "year": 2025,
+    "spineColor": "#6b4f3a",
+    "screenshots": [],
+    "synopsis": {
+      "pt": "Aplicação fullstack com .NET no backend, React no front e Postgres — fluxo de vendas de ponta a ponta.",
+      "en": "Fullstack app with .NET on the backend, React on the front, and Postgres — an end-to-end sales flow."
+    },
+    "tags": [".NET", "React", "PostgreSQL"],
+    "githubUrl": "https://github.com/CarolinaRussi/fullstack-dotnet-react-postgres",
+    "learnings": {
+      "pt": "Encaixar API .NET com um front React e um banco relacional de verdade.",
+      "en": "Wiring a .NET API to a React front and a real relational database."
+    },
+    "kind": "book"
+  },
+  {
+    "id": "empresas-licencas",
+    "title": "Empresas e licenças",
+    "subtitle": {
+      "pt": "Cadastro e licenças ambientais",
+      "en": "Companies and environmental licenses"
+    },
+    "year": 2025,
+    "spineColor": "#3d5a80",
+    "screenshots": [],
+    "synopsis": {
+      "pt": "Next.js (App Router) + Drizzle + MySQL no Docker: CRUD de empresas e licenças ambientais vinculadas.",
+      "en": "Next.js (App Router) + Drizzle + MySQL in Docker: CRUD for companies and linked environmental licenses."
+    },
+    "tags": ["Next.js", "Drizzle", "MySQL", "Docker"],
+    "githubUrl": "https://github.com/CarolinaRussi/fullstack-next-drizzle-mysql",
+    "learnings": {
+      "pt": "ORM tipado, migrations e app full no mesmo repo Next.",
+      "en": "Typed ORM, migrations, and a full app in one Next repo."
+    },
+    "kind": "book"
+  },
+  {
+    "id": "solicitacoes",
+    "title": "Solicitações",
+    "subtitle": {
+      "pt": "Solicitações acadêmicas",
+      "en": "Academic requests"
+    },
+    "year": 2025,
+    "spineColor": "#5c2a3a",
+    "screenshots": [],
+    "synopsis": {
+      "pt": "Laravel 12 + React: estudantes abrem pedidos, admins respondem e atualizam status. API com Sanctum, Docker e MySQL.",
+      "en": "Laravel 12 + React: students open requests, admins reply and update status. Sanctum API, Docker, and MySQL."
+    },
+    "tags": ["Laravel", "React", "Docker", "MySQL"],
+    "githubUrl": "https://github.com/CarolinaRussi/fullstack-php-laravel-react",
+    "learnings": {
+      "pt": "Auth por token, papéis diferentes e um monorepo front/back com Docker.",
+      "en": "Token auth, different roles, and a front/back monorepo with Docker."
+    },
+    "kind": "book"
+  }
+]

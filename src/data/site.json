@@ -1,0 +1,32 @@
+{
+  "name": "Carolina Russi Ferla",
+  "brand": "Estante da Carol",
+  "role": {
+    "pt": "Desenvolvedora fullstack",
+    "en": "Fullstack developer"
+  },
+  "tagline": {
+    "pt": "Puxa um livro: cada lombada é um app que eu construí.",
+    "en": "Pull a book: each spine is an app I built."
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/carolina-russi-ferla-74923017a",
+    "github": "https://github.com/CarolinaRussi",
+    "email": "carolinaferlarussi@gmail.com"
+  },
+  "about": {
+    "photo": "/images/carol.jpeg",
+    "blocks": {
+      "pt": [
+        "Hoje atuo como desenvolvedora fullstack e estou aberta a conversas — sobretudo remoto internacional e freelas pontuais.",
+        "Comecei pelo front e fui ganhando o resto do stack construindo apps de ponta a ponta.",
+        "Leitura faz parte de quem eu sou: por isso a estante — e o EntreLivros nasceu dos meus clubes de livro."
+      ],
+      "en": [
+        "I work as a fullstack developer and I'm open to conversations — especially international remote roles and occasional freelance.",
+        "I started on the front end and grew into the full stack by shipping apps end to end.",
+        "Reading is part of who I am: that's why the shelf — and EntreLivros grew out of my book clubs."
+      ]
+    }
+  }
+}
