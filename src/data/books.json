@@ -9,7 +9,18 @@
     "year": 2026,
     "spineColor": "#1a2a4a",
     "coverImage": "/images/entrelivros-logo.png",
-    "screenshots": [],
+    "screenshots": [
+      "/images/entrelivros-screenshots/1%20-%20Home.png",
+      "/images/entrelivros-screenshots/2%20-%20Perfil.png",
+      "/images/entrelivros-screenshots/3%20-%20Encontros.png",
+      "/images/entrelivros-screenshots/4%20-%20Biblioteca%20do%20clube.png",
+      "/images/entrelivros-screenshots/5%20-%20Explorar.png",
+      "/images/entrelivros-screenshots/6%20-%20Sorteios.png",
+      "/images/entrelivros-screenshots/7%20-%20Sorteios.png",
+      "/images/entrelivros-screenshots/8%20-%20Sorteios.png",
+      "/images/entrelivros-screenshots/9%20-%20Sorteios.png",
+      "/images/entrelivros-screenshots/10%20-%20email.png"
+    ],
     "synopsis": {
       "pt": "App para clubes de livro: histórico de leituras, encontros e memórias da galera — sem planilha espalhada. Produto real, no ar, feito de ponta a ponta.",
       "en": "A book-club app for reading history, meetings, and shared memories — no scattered spreadsheets. A live product built end to end."

@@ -255,6 +255,19 @@
     );
   }
 
+  .book-3d-inner--detail {
+    width: min(200px, 52vw);
+  }
+
+  .page-enter {
+    animation: page-enter 0.35s ease-out both;
+  }
+
+  .detail-cover {
+    transform: rotateY(-10deg);
+    transform-style: preserve-3d;
+  }
+
   .about-photo {
     aspect-ratio: 1 / 1;
     max-height: 22rem;
@@ -265,6 +278,17 @@
   from {
     opacity: 0;
     transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
   }
   to {
     opacity: 1;
