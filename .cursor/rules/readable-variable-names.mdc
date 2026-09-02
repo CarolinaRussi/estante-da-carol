@@ -1,0 +1,38 @@
+---
+description: Nomenclatura legível de variáveis (evitar letras soltas)
+alwaysApply: true
+---
+
+# Nomenclatura de variáveis
+
+Nomes devem ser **legíveis por humanos** ao ler o código por cima. Prefira o domínio (`book`, `project`, `shelfItem`) a abreviações opacas.
+
+## Evitar
+
+- Variáveis ou parâmetros de **uma letra** (`b`, `p`, `t`, `e`), salvo exceções abaixo
+- Abreviações crípticas de 2 letras quando o nome completo cabe (`bk` → `book`, `sp` → `spineColor`)
+- Reutilizar a mesma letra curta para conceitos diferentes no mesmo ficheiro
+
+## Preferir
+
+```typescript
+// ❌
+const b = books.find((b) => b.id === id);
+projects.map((p) => p.title);
+
+// ✅
+const book = books.find((book) => book.id === id);
+projects.map((project) => project.title);
+```
+
+Callbacks `.map` / `.filter`: use o nome da entidade (`book`, `link`, `locale`).
+
+## Exceções aceitáveis
+
+- Índice de loop simples: `i`, `j`
+- Coordenadas ou matemática curta e local: `x`, `y`, `n` se o bloco for curto e óbvio
+- Catch: preferir `error` (não `e`)
+
+## Ao escrever código novo
+
+Aplicar **no código que criar ou alterar**. Não renomear em massa fora do escopo da tarefa — a menos que a pessoa peça.
