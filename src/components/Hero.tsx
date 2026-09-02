@@ -18,9 +18,17 @@ export function Hero() {
         <p className="mt-4 max-w-xl text-xl text-ink md:text-2xl">{t(site.role)}</p>
         <p className="mt-3 max-w-xl text-lg text-ink-muted">{t(site.tagline)}</p>
         <CtaLinks className="mt-8" />
-        <p className="font-ui mt-10 text-sm text-ink-muted">
+        <p className="font-ui mt-10 flex flex-wrap gap-x-3 gap-y-2 text-sm text-ink-muted">
           <a className="underline-offset-4 hover:underline" href="#destaque">
             {t(site.ui.seeFeatured)}
+          </a>
+          <span aria-hidden>·</span>
+          <a className="underline-offset-4 hover:underline" href="#sobre">
+            {t(site.ui.aboutEyebrow)}
+          </a>
+          <span aria-hidden>·</span>
+          <a className="underline-offset-4 hover:underline" href="#contato">
+            {t(site.ui.contactEyebrow)}
           </a>
         </p>
       </div>

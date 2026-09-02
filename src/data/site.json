@@ -6,8 +6,8 @@
     "en": "Full-stack software engineer"
   },
   "tagline": {
-    "pt": "Puxa um livro: cada lombada é um app que eu construí.",
-    "en": "Pull a book: each spine is an app I built."
+    "pt": "Este é o meu portfólio: uma estante em que cada livro é um projeto. Mais abaixo tem um pouco sobre mim e um jeito fácil de entrar em contato.",
+    "en": "This is my portfolio: a shelf where each book is a project. Further down you'll find a bit about me and an easy way to get in touch."
   },
   "links": {
     "linkedin": "https://www.linkedin.com/in/carolina-russi-ferla-74923017a",
@@ -63,8 +63,8 @@
       "en": "Other books I built"
     },
     "shelfHint": {
-      "pt": "No desktop, puxa uma lombada. No celular, abre pela capa.",
-      "en": "On desktop, pull a spine. On mobile, open from the cover."
+      "pt": "Puxa um livro: no desktop pela lombada, no celular pela capa.",
+      "en": "Pull a book: by the spine on desktop, by the cover on mobile."
     },
     "aboutEyebrow": {
       "pt": "Sobre",
