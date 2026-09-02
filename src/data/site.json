@@ -2,8 +2,8 @@
   "name": "Carolina Russi Ferla",
   "brand": "Estante da Carol",
   "role": {
-    "pt": "Desenvolvedora fullstack",
-    "en": "Fullstack developer"
+    "pt": "Engenheira de software fullstack",
+    "en": "Full-stack software engineer"
   },
   "tagline": {
     "pt": "Puxa um livro: cada lombada é um app que eu construí.",
@@ -18,15 +18,133 @@
     "photo": "/images/carol.jpeg",
     "blocks": {
       "pt": [
-        "Hoje atuo como desenvolvedora fullstack e estou aberta a conversas, sobretudo se tiverem ofertas remotas internacionais e freelas pontuais.",
-        "Comecei pelo front e fui ganhando o resto do stack construindo apps de ponta a ponta.",
-        "Leitura faz parte de quem eu sou: por isso a estante e por isso o meu site EntreLivros que nasceu dos meus clubes de livro."
+        "Sou engenheira de software fullstack. Trabalho bastante com React, TypeScript, Node.js e PHP, do front ao back.",
+        "No trabalho construo features de ponta a ponta em plataformas educacionais: telas, APIs, banco, aquele fluxo inteiro. Comecei pelo front e fui pegando o resto na prática. Também estou cursando Análise e Desenvolvimento de Sistemas.",
+        "Gosto muito de ler, por isso a estante. O EntreLivros nasceu dos meus clubes de livro: um app fullstack com login, PostgreSQL, Google Calendar e o resto pra rodar de verdade."
       ],
       "en": [
-        "Today I work as a fullstack developer and I'm open to conversations, especially about international remote roles and occasional freelance gigs.",
-        "I started on the front end and grew into the rest of the stack by building apps end to end.",
-        "Reading is part of who I am: that's why the shelf, and that's why my site EntreLivros, which grew out of my book clubs."
+        "I'm a full-stack software engineer. I work a lot with React, TypeScript, Node.js, and PHP, from front to back.",
+        "At work I build end-to-end features on educational platforms: UI, APIs, database, the whole flow. I started on the front end and picked up the rest by shipping. I'm also studying Systems Analysis and Development.",
+        "I love reading, which is why the shelf exists. EntreLivros came out of my book clubs: a full-stack app with auth, PostgreSQL, Google Calendar, and everything else it needs to actually run."
       ]
+    }
+  },
+  "ui": {
+    "seeFeatured": {
+      "pt": "Ver o livro em destaque ↓",
+      "en": "See the featured book ↓"
+    },
+    "featuredLabel": {
+      "pt": "Livro em destaque",
+      "en": "Featured book"
+    },
+    "openBook": {
+      "pt": "Abrir o livro",
+      "en": "Open the book"
+    },
+    "viewDemo": {
+      "pt": "Ver demo",
+      "en": "View demo"
+    },
+    "viewCode": {
+      "pt": "Ver código",
+      "en": "View code"
+    },
+    "codeSoon": {
+      "pt": "Código no GitHub em breve",
+      "en": "GitHub code coming soon"
+    },
+    "shelfEyebrow": {
+      "pt": "A estante",
+      "en": "The shelf"
+    },
+    "shelfTitle": {
+      "pt": "Outros livros que eu construí",
+      "en": "Other books I built"
+    },
+    "shelfHint": {
+      "pt": "No desktop, puxa uma lombada. No celular, abre pela capa.",
+      "en": "On desktop, pull a spine. On mobile, open from the cover."
+    },
+    "aboutEyebrow": {
+      "pt": "Sobre",
+      "en": "About"
+    },
+    "contactEyebrow": {
+      "pt": "Contato",
+      "en": "Contact"
+    },
+    "contactTitle": {
+      "pt": "Bora conversar?",
+      "en": "Shall we talk?"
+    },
+    "contactBody": {
+      "pt": "Aberta a propostas, sobretudo remoto internacional e a freelas pontuais. Me chama no LinkedIn ou por e-mail.",
+      "en": "Open to opportunities — especially international remote — and occasional freelance. Reach me on LinkedIn or by email."
+    },
+    "backToShelf": {
+      "pt": "← Voltar à estante",
+      "en": "← Back to the shelf"
+    },
+    "moreBooks": {
+      "pt": "← Mais livros na estante",
+      "en": "← More books on the shelf"
+    },
+    "featuredKind": {
+      "pt": "Destaque",
+      "en": "Featured"
+    },
+    "projectKind": {
+      "pt": "Projeto",
+      "en": "Project"
+    },
+    "synopsis": {
+      "pt": "Sinopse",
+      "en": "Synopsis"
+    },
+    "chapter": {
+      "pt": "Capítulo",
+      "en": "Chapter"
+    },
+    "pages": {
+      "pt": "Páginas",
+      "en": "Pages"
+    },
+    "screenshotOf": {
+      "pt": "Screenshot de",
+      "en": "Screenshot of"
+    },
+    "openBookAria": {
+      "pt": "Abrir",
+      "en": "Open"
+    },
+    "notFoundTitle": {
+      "pt": "Esse livro não está na prateleira",
+      "en": "That book isn't on this shelf"
+    },
+    "notFoundBody": {
+      "pt": "A página que você procurou não existe — ou o volume ainda não chegou à Estante da Carol.",
+      "en": "The page you looked for doesn't exist — or that volume hasn't arrived at Estante da Carol yet."
+    },
+    "notFoundDocTitle": {
+      "pt": "Não encontrado",
+      "en": "Not found"
+    },
+    "backHome": {
+      "pt": "Voltar à home",
+      "en": "Back to home"
+    },
+    "emailLabel": {
+      "pt": "E-mail",
+      "en": "Email"
+    },
+    "langToggleAria": {
+      "pt": "Escolher idioma",
+      "en": "Choose language"
+    },
+    "metaDescription": {
+      "pt": "Estante da Carol — portfólio de Carolina Russi Ferla, engenheira de software fullstack (React, TypeScript, Node.js, PHP).",
+      "en": "Estante da Carol — portfolio of Carolina Russi Ferla, full-stack software engineer (React, TypeScript, Node.js, PHP)."
     }
   }
 }

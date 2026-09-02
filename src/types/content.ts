@@ -23,6 +23,38 @@ export type BookProject = {
   kind: BookKind
 }
 
+export type SiteUi = {
+  seeFeatured: LocalizedString
+  featuredLabel: LocalizedString
+  openBook: LocalizedString
+  viewDemo: LocalizedString
+  viewCode: LocalizedString
+  codeSoon: LocalizedString
+  shelfEyebrow: LocalizedString
+  shelfTitle: LocalizedString
+  shelfHint: LocalizedString
+  aboutEyebrow: LocalizedString
+  contactEyebrow: LocalizedString
+  contactTitle: LocalizedString
+  contactBody: LocalizedString
+  backToShelf: LocalizedString
+  moreBooks: LocalizedString
+  featuredKind: LocalizedString
+  projectKind: LocalizedString
+  synopsis: LocalizedString
+  chapter: LocalizedString
+  pages: LocalizedString
+  screenshotOf: LocalizedString
+  openBookAria: LocalizedString
+  notFoundTitle: LocalizedString
+  notFoundBody: LocalizedString
+  notFoundDocTitle: LocalizedString
+  backHome: LocalizedString
+  emailLabel: LocalizedString
+  langToggleAria: LocalizedString
+  metaDescription: LocalizedString
+}
+
 export type SiteContent = {
   name: string
   brand: string
@@ -40,4 +72,5 @@ export type SiteContent = {
       en: [string, string, string]
     }
   }
+  ui: SiteUi
 }

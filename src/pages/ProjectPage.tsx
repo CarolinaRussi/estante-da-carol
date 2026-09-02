@@ -1,20 +1,22 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getBookById, getSite } from '../data/content'
+import { useLocale } from '../i18n/LocaleProvider'
 import { NotFoundPage } from './NotFoundPage'
 
 export function ProjectPage() {
   const { id } = useParams()
   const book = id ? getBookById(id) : undefined
   const site = getSite()
+  const { t } = useLocale()
 
   useEffect(() => {
     if (!book) {
-      document.title = `Não encontrado · ${site.brand}`
+      document.title = `${t(site.ui.notFoundDocTitle)} · ${site.brand}`
       return
     }
     document.title = `${book.title} · ${site.brand}`
-  }, [book, site.brand])
+  }, [book, site.brand, site.ui.notFoundDocTitle, t])
 
   if (!book) {
     return <NotFoundPage />
@@ -29,7 +31,7 @@ export function ProjectPage() {
           className="font-ui text-sm text-night underline-offset-4 hover:underline"
           to="/#estante"
         >
-          ← Voltar à estante
+          {t(site.ui.backToShelf)}
         </Link>
 
         <div className="mt-10 grid items-start gap-10 md:grid-cols-[minmax(180px,240px)_minmax(0,1fr)] md:gap-14">
@@ -67,14 +69,14 @@ export function ProjectPage() {
 
           <div>
             <p className="font-ui text-sm tracking-[0.16em] text-ink-muted uppercase">
-              {book.kind === 'featured' ? 'Destaque' : 'Projeto'}
+              {t(book.kind === 'featured' ? site.ui.featuredKind : site.ui.projectKind)}
               {book.year ? ` · ${book.year}` : ''}
             </p>
             <h1 className="font-display mt-2 text-4xl font-semibold text-night md:text-5xl">
               {book.title}
             </h1>
             {book.subtitle ? (
-              <p className="mt-2 text-xl text-ink-muted">{book.subtitle.pt}</p>
+              <p className="mt-2 text-xl text-ink-muted">{t(book.subtitle)}</p>
             ) : null}
 
             <ul className="font-ui mt-5 flex flex-wrap gap-2 text-sm text-ink-muted">
@@ -88,26 +90,26 @@ export function ProjectPage() {
             <div className="font-ui mt-8 flex flex-wrap gap-3">
               {book.liveUrl ? (
                 <a
-                  className="rounded-md bg-night px-4 py-2.5 text-sm font-medium text-paper transition hover:bg-night-hover"
+                  className="rounded-md bg-night px-4 py-2.5 text-sm font-medium text-paper transition hover:bg-night-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night"
                   href={book.liveUrl}
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Ver demo
+                  {t(site.ui.viewDemo)}
                 </a>
               ) : null}
               {book.githubUrl ? (
                 <a
-                  className="rounded-md border border-night/25 px-4 py-2.5 text-sm font-medium text-night transition hover:border-night/50"
+                  className="rounded-md border border-night/25 px-4 py-2.5 text-sm font-medium text-night transition hover:border-night/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night"
                   href={book.githubUrl}
                   rel="noreferrer"
                   target="_blank"
                 >
-                  Ver código
+                  {t(site.ui.viewCode)}
                 </a>
               ) : (
                 <span className="font-ui self-center text-sm text-ink-muted">
-                  Código no GitHub em breve
+                  {t(site.ui.codeSoon)}
                 </span>
               )}
             </div>
@@ -115,27 +117,33 @@ export function ProjectPage() {
         </div>
 
         <section className="mt-14 max-w-3xl border-t border-night/10 pt-10">
-          <h2 className="font-display text-2xl font-semibold text-night">Sinopse</h2>
-          <p className="mt-4 text-lg leading-relaxed text-ink">{book.synopsis.pt}</p>
+          <h2 className="font-display text-2xl font-semibold text-night">
+            {t(site.ui.synopsis)}
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-ink">{t(book.synopsis)}</p>
         </section>
 
         {book.learnings ? (
           <section className="mt-10 max-w-3xl">
-            <h2 className="font-display text-2xl font-semibold text-night">Capítulo</h2>
+            <h2 className="font-display text-2xl font-semibold text-night">
+              {t(site.ui.chapter)}
+            </h2>
             <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-              {book.learnings.pt}
+              {t(book.learnings)}
             </p>
           </section>
         ) : null}
 
         {hasScreenshots ? (
           <section className="mt-14 border-t border-night/10 pt-10">
-            <h2 className="font-display text-2xl font-semibold text-night">Páginas</h2>
+            <h2 className="font-display text-2xl font-semibold text-night">
+              {t(site.ui.pages)}
+            </h2>
             <ul className="mt-6 grid gap-4 sm:grid-cols-2">
               {book.screenshots?.map((screenshot) => (
                 <li key={screenshot}>
                   <img
-                    alt={`Screenshot de ${book.title}`}
+                    alt={`${t(site.ui.screenshotOf)} ${book.title}`}
                     className="w-full rounded-md border border-night/10 object-cover shadow-[0_12px_28px_rgb(26_42_74_/_0.08)]"
                     src={screenshot}
                   />
@@ -150,7 +158,7 @@ export function ProjectPage() {
             className="font-ui text-sm text-night underline-offset-4 hover:underline"
             to="/#estante"
           >
-            ← Mais livros na estante
+            {t(site.ui.moreBooks)}
           </Link>
         </div>
       </div>

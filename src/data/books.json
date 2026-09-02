@@ -22,14 +22,14 @@
       "/images/entrelivros-screenshots/10%20-%20email.png"
     ],
     "synopsis": {
-      "pt": "App para clubes de livro: histórico de leituras, encontros e memórias da galera — sem planilha espalhada. Produto real, no ar, feito de ponta a ponta.",
-      "en": "A book-club app for reading history, meetings, and shared memories — no scattered spreadsheets. A live product built end to end."
+      "pt": "Eu participava de vários clubes de livro e vivia perdida entre planilhas, grupos de WhatsApp e anotações no celular. Então parei de reclamar e construí o Entrelivros: um app de verdade, no ar, onde o clube organiza leituras, marca encontros (com Google Agenda), avalia livros, guarda memórias, explora clubes num mapa, sorteia a próxima leitura e ainda recebe avisos por e-mail. Fiz frontend, backend, banco, integrações e deploy.",
+      "en": "I was in a few book clubs and everything lived in spreadsheets, WhatsApp threads, and random phone notes. So I stopped complaining and built Entrelivros: a real, live app where a club can track readings, schedule meetings (with Google Calendar), rate books, keep memories, explore clubs on a map, draw the next read, and get email updates. I built the frontend, backend, database, integrations, and deploy."
     },
-    "tags": ["Fullstack", "Product", "Reading"],
+    "tags": ["Fullstack", "Product", "React", "Node", "PostgreSQL"],
     "liveUrl": "https://www.entrelivros.com",
     "learnings": {
-      "pt": "Tirar uma dor minha de leitora e virar produto usável por outras pessoas.",
-      "en": "Turning my own reader pain into a product other people can actually use."
+      "pt": "Aprendi que produto bom não é só código bonito: é entender a dor, cortar o que não precisa e colocar no ar algo que outra pessoa consiga usar sem você do lado. Também aprendi a carregar um projeto solo de ponta a ponta, decisões de produto, stack, banco, auth, e-mail, mapa, sorteios, e a usar IA como parceira de dúvidas, sem terceirizar o raciocínio.",
+      "en": "I learned that a good product isn't just clean code: it's understanding the pain, cutting what you don't need, and shipping something someone else can use without you hovering. I also learned how to carry a solo project end to end — product calls, stack, database, auth, email, maps, reading draws — and how to use AI as a thinking partner without outsourcing the judgment."
     },
     "kind": "featured"
   },

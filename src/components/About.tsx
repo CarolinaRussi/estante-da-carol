@@ -1,8 +1,10 @@
 import { getSite } from '../data/content'
+import { useLocale } from '../i18n/LocaleProvider'
 
 export function About() {
   const site = getSite()
-  const [blockOne, blockTwo, blockThree] = site.about.blocks.pt
+  const { locale, t } = useLocale()
+  const [blockOne, blockTwo, blockThree] = site.about.blocks[locale]
 
   return (
     <section className="border-t border-night/10 px-6 py-16 md:py-20" id="sobre">
@@ -20,7 +22,7 @@ export function About() {
         ) : null}
         <div>
           <p className="font-ui text-sm tracking-[0.16em] text-ink-muted uppercase">
-            Sobre
+            {t(site.ui.aboutEyebrow)}
           </p>
           <h2 className="font-display mt-2 text-3xl font-semibold text-night md:text-4xl">
             {site.name}
