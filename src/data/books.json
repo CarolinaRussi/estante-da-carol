@@ -35,6 +35,33 @@
     "kind": "featured"
   },
   {
+    "id": "homewallet",
+    "title": "HomeWallet",
+    "subtitle": {
+      "pt": "Finanças pessoais e compartilhadas",
+      "en": "Personal and shared finances"
+    },
+    "year": 2026,
+    "spineColor": "#2f4568",
+    "screenshots": [
+      "/images/homewallet-screenshots/homewallet%20-%20pagina%20inicial.png",
+      "/images/homewallet-screenshots/homewallet%20-%20eu.png",
+      "/images/homewallet-screenshots/homewallet%20-%20visao%20geral.png"
+    ],
+    "synopsis": {
+      "pt": "Finanças em casa quase nunca começam num app. Começam numa planilha que cresce, vira bagunça e ninguém mais confia no número. O HomeWallet nasceu dessa dor: um produto web pra acompanhar o mês sozinha ou num espaço com outras pessoas, sem fingir que todo mundo tem a mesma conta. Cada um registra o que pagou de verdade. O que é compartilhado entra na visão do grupo sem virar cobrança. A sobra carrega pro mês seguinte. A reserva tem caixinhas. O cartão vira fatura com linhas, parcelas e assinaturas. E o Overview mostra tendência e composição, com privacidade que você escolhe. Fiz frontend, backend, banco, login, e-mail e o produto inteiro.",
+      "en": "Home finances almost never start in an app. They start in a spreadsheet that grows, turns into a mess, and nobody trusts the number anymore. HomeWallet came from that pain: a web product to track the month alone or in a shared space, without pretending everyone has the same account. Each person logs what they actually paid. Shared costs show up in the group view without turning into a bill chase. Leftover balance carries into the next month. Savings live in little boxes. The card becomes a statement with lines, installments, and subscriptions. And Overview shows trend and mix, with privacy you choose. I built the frontend, backend, database, login, email, and the whole product."
+    },
+    "tags": ["React", "TypeScript", "Fastify", "PostgreSQL", "Vite"],
+    "liveUrl": "https://homewallet-tau.vercel.app/",
+    "githubUrl": "https://github.com/CarolinaRussi/homewallet",
+    "learnings": {
+      "pt": "Aqui o desafio não era mais um CRUD de gastos. Era pegar o jeito de usar planilha e virar regra de produto que aguenta casal, casa e uso solo sem bagunçar o dinheiro. Decidi o que entra e o que fica de fora, tratei número com cuidado e cuidei da experiência: feedback claro, loading honesto, tela que não assusta.\n\nDiferente do Entrelivros, onde construí quase tudo na mão, neste projeto usei e abusei de IA de propósito. Queria mostrar que chego pronta pra qualquer time que já trabalha com essas ferramentas. Não foi “colar e torcer”: montei rules e skills no Cursor pra manter padrão de código, domínio e UX, e pra proteger o que importa (dados do usuário, auth, dinheiro). A IA acelerou a entrega. As decisões e a responsabilidade continuaram comigo.",
+      "en": "The challenge here was not another expenses CRUD. It was taking how people use spreadsheets and turning that into product rules that hold up for couples, households, and solo use without messing up the money. I decided what ships and what stays out, treated numbers carefully, and cared about the experience: clear feedback, honest loading, screens that do not scare people off.\n\nUnlike EntreLivros, where I built almost everything by hand, on this project I used AI heavily on purpose. I wanted to show I am ready for any team already working with these tools. It was not copy-paste and hope: I set up Cursor rules and skills to keep code, domain, and UX standards, and to protect what matters (user data, auth, money). AI sped up delivery. The decisions and the responsibility stayed with me."
+    },
+    "kind": "book"
+  },
+  {
     "id": "shorten-url",
     "title": "Shorten URL",
     "subtitle": {
@@ -42,7 +69,7 @@
       "en": "URL shortener"
     },
     "year": 2024,
-    "spineColor": "#2f4568",
+    "spineColor": "#3d5f8a",
     "screenshots": [],
     "synopsis": {
       "pt": "Frontend em React na Vercel falando com API no Render: encurta URLs e devolve um link curto pra compartilhar.",
@@ -65,7 +92,7 @@
       "en": "Fullstack sales app"
     },
     "year": 2025,
-    "spineColor": "#3d5f8a",
+    "spineColor": "#5479a8",
     "screenshots": [],
     "synopsis": {
       "pt": "Aplicação fullstack com .NET no backend, React no front e Postgres — fluxo de vendas de ponta a ponta.",
@@ -76,28 +103,6 @@
     "learnings": {
       "pt": "Encaixar API .NET com um front React e um banco relacional de verdade.",
       "en": "Wiring a .NET API to a React front and a real relational database."
-    },
-    "kind": "book"
-  },
-  {
-    "id": "empresas-licencas",
-    "title": "Empresas e licenças",
-    "subtitle": {
-      "pt": "Cadastro e licenças ambientais",
-      "en": "Companies and environmental licenses"
-    },
-    "year": 2025,
-    "spineColor": "#5479a8",
-    "screenshots": [],
-    "synopsis": {
-      "pt": "Next.js (App Router) + Drizzle + MySQL no Docker: CRUD de empresas e licenças ambientais vinculadas.",
-      "en": "Next.js (App Router) + Drizzle + MySQL in Docker: CRUD for companies and linked environmental licenses."
-    },
-    "tags": ["Next.js", "Drizzle", "MySQL", "Docker"],
-    "githubUrl": "https://github.com/CarolinaRussi/fullstack-next-drizzle-mysql",
-    "learnings": {
-      "pt": "ORM tipado, migrations e app full no mesmo repo Next.",
-      "en": "Typed ORM, migrations, and a full app in one Next repo."
     },
     "kind": "book"
   },

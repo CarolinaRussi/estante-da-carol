@@ -24,34 +24,7 @@ export function Shelf({ books }: ShelfProps) {
         </h2>
         <p className="mt-3 max-w-2xl text-ink-muted">{t(site.ui.shelfHint)}</p>
 
-        <ul className="mt-10 grid gap-6 sm:grid-cols-2 md:hidden">
-          {books.map((book) => (
-            <li key={book.id} className="flex justify-center">
-              <Link
-                aria-label={book.title}
-                className="shelf-mobile-book"
-                to={`/projeto/${book.id}`}
-              >
-                <span aria-hidden className="shelf-mobile-pages" />
-                <span
-                  className="shelf-mobile-cover"
-                  style={{ backgroundColor: book.spineColor }}
-                >
-                  <span className="font-display text-lg leading-snug text-paper">
-                    {book.title}
-                  </span>
-                  {book.subtitle ? (
-                    <span className="font-ui mt-2 text-xs text-paper/75">
-                      {t(book.subtitle)}
-                    </span>
-                  ) : null}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <div className="shelf-stage mt-14 hidden md:block">
+        <div className="shelf-stage mt-10 md:mt-14">
           <div className="shelf-row">
             {books.map((book, index) => (
               <Link

@@ -128,7 +128,7 @@ export function ProjectPage() {
             <h2 className="font-display text-2xl font-semibold text-night">
               {t(site.ui.chapter)}
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-ink-muted">
+            <p className="mt-4 text-lg leading-relaxed whitespace-pre-line text-ink-muted">
               {t(book.learnings)}
             </p>
           </section>
