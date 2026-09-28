@@ -62,6 +62,37 @@
     "kind": "book"
   },
   {
+    "id": "questlog",
+    "title": "QuestLog",
+    "subtitle": {
+      "pt": "Seu quadro ao lado do Jira",
+      "en": "Your board beside Jira"
+    },
+    "year": 2026,
+    "spineColor": "#0f766e",
+    "screenshots": [],
+    "synopsis": {
+      "pt": "Eu uso Jira todo dia, mas o Jira é o quadro do time. Ele não guarda bem a minha sessão: o que eu estava fazendo, o que falta quando eu pauso, qual commit era daquela tarefa, o épico só como pano de fundo. Na segunda-feira ou depois de uma interrupção, isso some rápido.\n\nO QuestLog é um app que roda no meu computador, com os dados aqui, sem depender de nuvem. Em vez de card, a unidade é a quest, tipo “estou nisso agora”. Dá para pausar e escrever o que falta, sincronizar com o Jira só nas tarefas que estão no meu nome, arquivar o que já fechou e, se eu estiver no Cursor, os commits entram no resumo do épico sem atrapalhar o git. Não troca o Jira. Fica do lado, como um caderno meu.",
+      "en": "I use Jira every day, but Jira is the team board. It doesn’t really hold my session: what I was doing, what’s left when I pause, which commit belonged to which task, the epic as background only. On Monday or after an interruption, that fades fast.\n\nQuestLog is an app on my machine, with data stored locally, without needing the cloud. Instead of a ticket card, the unit is a quest, like “this is what I’m on now.” I can pause and write what’s left, sync with Jira for issues assigned to me, archive what’s done, and with Cursor, commits feed epic summaries without getting in the way of git. It doesn’t replace Jira. It sits beside it, like my own notebook."
+    },
+    "tags": [
+      "TypeScript",
+      "React",
+      "Fastify",
+      "SQLite",
+      "Electron",
+      "Jira API",
+      "IA",
+      "Local-first"
+    ],
+    "githubUrl": "https://github.com/CarolinaRussi/questlog",
+    "learnings": {
+      "pt": "Começou porque eu cansava de abrir o Jira e ainda não saber, na prática, onde eu tinha parado. Não era falta de ferramenta no time. Era falta de um lugar meu, simples, que sobrevivesse à troca de contexto.\n\nFui desenhando o produto com esse filtro: não virar um segundo Jira. Não puxar backlog dos outros, não encher a tela com descrição de card. Só o que importa pra retomar o trabalho: status, título, épico quando faz sentido, e a falta quando a tarefa pausa ou fica esperando no Jira com um motivo.\n\nPor baixo, montei um monorepo com a regra de negócio no centro e adapters finos pro resto: API, interface, CLI, app de mesa. SQLite na máquina, perfil configurável, hook de commit que falha aberto para o git nunca travar. Empacotei versão Windows porque a ideia era abrir de manhã e já estar lá, não ficar subindo servidor na mão.\n\nUsei bastante IA no Cursor, mas com regras claras de domínio e de UX. A IA acelerou. As escolhas de produto e de arquitetura continuaram minhas. Esse livro na estante é menos “integração com Jira” e mais “como eu organizo meu foco quando o dia é cheio de ticket e repo”.",
+      "en": "It started because I was tired of opening Jira and still not knowing, in practice, where I had left off. The team wasn’t missing a tool. I was missing a simple place of my own that survived context switching.\n\nI shaped the product with that filter: don’t become a second Jira. Don’t pull everyone else’s backlog, don’t fill the screen with card descriptions. Only what matters to pick work back up: status, title, epic when it helps, and the “what’s left” note when a task pauses or waits in Jira with a reason.\n\nUnder the hood, I built a monorepo with business rules at the center and thin adapters around them: API, UI, CLI, desktop app. SQLite on the machine, a configurable profile, commit hooks that fail open so git never blocks. I packaged a Windows build because the idea was to open it in the morning and it’s already there, not to start a server by hand every time.\n\nI used AI in Cursor a lot, but with clear domain and UX rules. AI sped things up. Product and architecture choices stayed mine. This book on the shelf is less “Jira integration” and more “how I organize my focus when the day is full of tickets and repos.”"
+    },
+    "kind": "book"
+  },
+  {
     "id": "shorten-url",
     "title": "Shorten URL",
     "subtitle": {
@@ -81,50 +112,6 @@
     "learnings": {
       "pt": "Separar front e API e publicar os dois em hosts diferentes.",
       "en": "Splitting front and API and shipping them on different hosts."
-    },
-    "kind": "book"
-  },
-  {
-    "id": "vendas",
-    "title": "Vendas",
-    "subtitle": {
-      "pt": "App fullstack de vendas",
-      "en": "Fullstack sales app"
-    },
-    "year": 2025,
-    "spineColor": "#5479a8",
-    "screenshots": [],
-    "synopsis": {
-      "pt": "Aplicação fullstack com .NET no backend, React no front e Postgres — fluxo de vendas de ponta a ponta.",
-      "en": "Fullstack app with .NET on the backend, React on the front, and Postgres — an end-to-end sales flow."
-    },
-    "tags": [".NET", "React", "PostgreSQL"],
-    "githubUrl": "https://github.com/CarolinaRussi/fullstack-dotnet-react-postgres",
-    "learnings": {
-      "pt": "Encaixar API .NET com um front React e um banco relacional de verdade.",
-      "en": "Wiring a .NET API to a React front and a real relational database."
-    },
-    "kind": "book"
-  },
-  {
-    "id": "solicitacoes",
-    "title": "Solicitações",
-    "subtitle": {
-      "pt": "Solicitações acadêmicas",
-      "en": "Academic requests"
-    },
-    "year": 2025,
-    "spineColor": "#6b8eb8",
-    "screenshots": [],
-    "synopsis": {
-      "pt": "Laravel 12 + React: estudantes abrem pedidos, admins respondem e atualizam status. API com Sanctum, Docker e MySQL.",
-      "en": "Laravel 12 + React: students open requests, admins reply and update status. Sanctum API, Docker, and MySQL."
-    },
-    "tags": ["Laravel", "React", "Docker", "MySQL"],
-    "githubUrl": "https://github.com/CarolinaRussi/fullstack-php-laravel-react",
-    "learnings": {
-      "pt": "Auth por token, papéis diferentes e um monorepo front/back com Docker.",
-      "en": "Token auth, different roles, and a front/back monorepo with Docker."
     },
     "kind": "book"
   }
