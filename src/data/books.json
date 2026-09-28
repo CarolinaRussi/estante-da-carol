@@ -70,7 +70,10 @@
     },
     "year": 2026,
     "spineColor": "#0f766e",
-    "screenshots": [],
+    "screenshots": [
+      "/images/questlog-screenshots/1%20-%20Home.png",
+      "/images/questlog-screenshots/2%20-%20Arquivo.png"
+    ],
     "synopsis": {
       "pt": "Eu uso Jira todo dia, mas o Jira é o quadro do time. Ele não guarda bem a minha sessão: o que eu estava fazendo, o que falta quando eu pauso, qual commit era daquela tarefa, o épico só como pano de fundo. Na segunda-feira ou depois de uma interrupção, isso some rápido.\n\nO QuestLog é um app que roda no meu computador, com os dados aqui, sem depender de nuvem. Em vez de card, a unidade é a quest, tipo “estou nisso agora”. Dá para pausar e escrever o que falta, sincronizar com o Jira só nas tarefas que estão no meu nome, arquivar o que já fechou e, se eu estiver no Cursor, os commits entram no resumo do épico sem atrapalhar o git. Não troca o Jira. Fica do lado, como um caderno meu.",
       "en": "I use Jira every day, but Jira is the team board. It doesn’t really hold my session: what I was doing, what’s left when I pause, which commit belonged to which task, the epic as background only. On Monday or after an interruption, that fades fast.\n\nQuestLog is an app on my machine, with data stored locally, without needing the cloud. Instead of a ticket card, the unit is a quest, like “this is what I’m on now.” I can pause and write what’s left, sync with Jira for issues assigned to me, archive what’s done, and with Cursor, commits feed epic summaries without getting in the way of git. It doesn’t replace Jira. It sits beside it, like my own notebook."
